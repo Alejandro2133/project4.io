@@ -1,0 +1,26 @@
+doctype html 
+html 
+    head 
+    title #{title}
+    block css 
+    <link rel="stylesheet" herf = "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/resources.css">
+
+    block script 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1./jquery.min.js"></script>
+    <script src="https://cdnjs.cloudfare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    body 
+    .row 
+        .col-4 
+        .col-4 
+        h1 Login Form
+        form(role='form' method='Post' action=actionurl)
+        div.form-group 
+            lable(for='username') Username: 
+            input#username.form-control(type='text', placeholder='Username' name='username2')
+        div.form-group 
+            lable(for='password') Password: 
+            input#password.form-control(type='password',  name='password2')
+        button.btn.btn-primary(type="submit", name="") Submit
